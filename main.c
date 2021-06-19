@@ -15,5 +15,7 @@ int main(int argc, char* argv[])
             printf("\nargv[%d]: %s", counter, argv[counter]);
     }
 
+    greatStudent();
+
     return 0;
 }
