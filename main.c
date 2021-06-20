@@ -3,6 +3,7 @@
 
 int main(int argc, char* argv[])
 {
+    int32_t gpa = 0;
     printf("Hello mate!\n");
 
     if (argc == 1) {
@@ -16,6 +17,11 @@ int main(int argc, char* argv[])
     }
 
     greatStudent();
+    loadUniData();
 
+    printf("Enter your GPA:");
+
+    scanf("%d", &gpa);
+    findByGPA(gpa);
     return 0;
 }
