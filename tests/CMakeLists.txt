@@ -10,8 +10,6 @@ FetchContent_Declare(
 set(gtest_force_shared_crt ON CACHE BOOL "" FORCE)
 FetchContent_MakeAvailable(googletest)
 
-# Now simply link against gtest or gtest_main as needed. Eg
 add_executable(testRunner testRunner.cpp)
 target_link_libraries(testRunner gtest_main uni)
 add_test(NAME functionality_test COMMAND test_fnc)
-
