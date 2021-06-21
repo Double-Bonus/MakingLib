@@ -1,0 +1,6 @@
+KTU,Controls systems,Lithuania,50
+ISM,Bussines managment,Lithuania,75
+Lund,Economics,Sweden,83
+VU,Physics,Lithuania,59
+Yale,Computer sc.,USA,90
+Harvard,Medicine,USA,100

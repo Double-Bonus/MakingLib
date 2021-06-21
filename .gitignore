@@ -1,0 +1,12 @@
+out/
+.*/
+
+# Build directories
+*build*/
+
+# Executables
+*.exe
+*.out
+*.app
+
+

@@ -1,5 +1,0 @@
-KTU,Propramu sistemos,Lietuva,4
-KTU,Elektronika,Lietuva,5
-Harvard,Mechanikos Inzinerija,JAV,9
-Lund,Inzinerija,Svedija,8
-VU,Matematika,Lietuva,5

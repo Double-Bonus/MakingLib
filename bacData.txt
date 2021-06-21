@@ -1,0 +1,5 @@
+KTU,Programs systems,Lithuania,45
+KTU,Electronics en.,Lithuania,55
+Harvard,Mechanics en.,USA,95
+Lund,Eltrical en.,Sweden,80
+VU,Math,Lithuania,65

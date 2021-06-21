@@ -1,27 +1,42 @@
 #include <stdio.h>
 #include <stdint.h>
+#include <stdbool.h>
+#include <string.h>
+
 
 int main(int argc, char* argv[])
 {
     int32_t gpa = 0;
-    printf("Hello mate!\n");
-
-    if (argc == 1) {
-        printf("No extra arguments used\n");
-    }
-    else if (argc >= 2) {
-        printf("Used %d argumets/n", argc);
-        printf("What was passed:/n");
-        for (uint32_t counter = 0; counter < argc; counter++)
-            printf("\nargv[%d]: %s", counter, argv[counter]);
-    }
+    int32_t result = -1;
+    int32_t cnt_gpa = 0;
+    bool isMasters = false;
 
     greatStudent();
-    loadUniData();
 
-    printf("Enter your GPA:");
+    if (argc == 1) {
+        printf("Loaded bachelor studies\n");
+    } else if (argc >= 2) {
+        for (uint32_t counter = 0; counter < argc; counter++) {
+            printf("\nargv[%d]: %s", counter, argv[counter]);
+            result = strcmp(argv[counter], "mas");
+            if (0 == result) {
+                isMasters = true;
+            }
+        }
+    }
 
-    scanf("%d", &gpa);
-    findByGPA(gpa);
+    loadUniData(isMasters);
+
+    printf("Enter your GPA (out of 100):");
+
+    cnt_gpa = scanf("%d", &gpa);
+    if (1 != cnt_gpa) {
+      printf("Invalid entry\n");
+    } else {
+      findByGPA(gpa);
+    }
+
+    printf("\nStudies in lithuania:\n");
+    searchLith();
     return 0;
 }
