@@ -9,12 +9,10 @@ static void getUserGpa(void)
     int32_t gpa = 0;
 
     printf("Enter your GPA (out of 100):");
-
     cnt_gpa = scanf("%d", &gpa);
     if (1 != cnt_gpa) {
         printf("Invalid entry\n");
-    }
-    else {
+    } else {
         findByGPA(gpa);
     }
 }
@@ -25,7 +23,6 @@ static void showLITStudies(bool hide)
         printf("\nStudies in Lithuania:\n");
         searchLith();
     }
-
 }
 
 int main(int argc, char* argv[])
